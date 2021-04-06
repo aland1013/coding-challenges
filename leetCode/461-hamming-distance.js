@@ -34,4 +34,8 @@ const hammingDistance = (x, y) => {
     }
     
     return hd;
+
+    // one-liner using bit manipulation
+    // return (x^y >>> 0).toString(2).split('').filter(bit => bit == 1).length;
+
 };
